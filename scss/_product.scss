@@ -1,0 +1,90 @@
+.product-container {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   width: 90%;
+   background-color: $secondary-color;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+
+   .product-img {
+      img {
+         width: 100%;
+         border-top-left-radius: 8px;
+         border-top-right-radius: 8px;
+      }
+   }
+
+   .product-text {
+      padding: 1.5rem;
+
+      h1 {
+         text-transform: capitalize;
+         font-family: $font-family-secondary;
+         font-size: 2rem;
+         color: $dark-color;
+         margin: 0;
+         line-height: 1;
+         margin: 0 0 20px 0;
+      }
+
+      h3 {
+         text-transform: uppercase;
+         font-weight: 500;
+         letter-spacing: 5px;
+         color: $gray-color;
+         opacity: 0.8;
+         margin: 0 0 20px 0;
+         font-size: 13px;
+      }
+
+      p.text {
+         color: $gray-color;
+         font-size: $font-size;
+         line-height: 1.5;
+         opacity: 0.8;
+      }
+
+      p.price {
+         color: $primary-color;
+         font-family: $font-family-secondary;
+         font-size: 2rem;
+         margin: 20px 0;
+      }
+
+      p.price small {
+         color: $gray-color;
+         font-family: $font-family-primary;
+         text-decoration: line-through;
+         font-size: $font-size;
+         margin-left: 15px;
+      }
+   }
+}
+
+.btn {
+   background: $dark-color;
+   color: $secondary-color;
+   font-weight: 500;
+   font-size: 13px;
+   padding: 13px;
+   margin: 20px 0 0px 0;
+   text-align: center;
+   border-radius: 8px;
+   transition: background 0.3s ease;
+
+   a {
+      color: $secondary-color;
+
+      svg {
+         margin-right: 7px;
+      }
+   }
+
+   &-primary {
+      background: $primary-color;
+
+      &:hover {
+         background: $primary-dark-color;
+      }
+   }
+}

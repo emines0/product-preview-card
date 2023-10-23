@@ -1,0 +1,26 @@
+@media (min-width: 450px) {
+   .product-container {
+      width: 65%;
+   }
+}
+
+@media (min-width: 768px) {
+   .product-container {
+      width: 60%;
+      max-width: 550px;
+      grid-template-columns: repeat(2, 1fr);
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 8px;
+      border-top-right-radius: 8px;
+
+      .product-img {
+         img {
+            content: url('../assets/images/image-product-desktop.jpg');
+            height: 100%;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border-top-right-radius: 0px;
+         }
+      }
+   }
+}
