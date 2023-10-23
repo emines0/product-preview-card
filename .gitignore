@@ -4,8 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
-/vscode
-/sass-cache
+/.vscode
+/.sass-cache
 
 # testing
 /coverage
